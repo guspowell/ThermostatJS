@@ -7,17 +7,25 @@ describe("Thermostat", function() {
 	});
 
 	describe("by default", function() {
+
 		it("starts at 20 degrees", function() {
 			expect(thermostat.temperature).toEqual(20);
 		});
-	});
 
-	describe("", function() {
-		it("can increase", function() {
+	});	
+
+	describe("can change temperature", function(){
+
+		it("by making it hotter", function() {
 			thermostat.increaseTemperature(1);
 			expect(thermostat.temperature).toEqual(21);
 		});
-	});
 
+		it("by making it cooler", function() {
+			thermostat.decreaseTemperature(1);
+			expect(thermostat.temperature).toEqual(19);
+		});
+
+	});
 
 });
