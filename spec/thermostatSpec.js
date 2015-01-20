@@ -40,6 +40,45 @@ describe("Thermostat", function() {
 			expect(thermostat.powerSaving).toEqual(true);
 		});
 
+		it("once turned on, temperature can't go above maximum (25)", function() {
+			thermostat.turnOnPowerSaving();
+			thermostat.increaseTemperature(6);
+			expect(thermostat.temperature).toEqual(25);
+		});
+
+		it("can be turned off", function() {
+			thermostat.turnOnPowerSaving();
+			thermostat.turnOffPowerSaving();
+			expect(thermostat.powerSaving).toEqual(false);
+		});
+
+		it("once turned off, temperature can't go above maximum (32)", function() {
+			thermostat.turnOffPowerSaving();
+			thermostat.increaseTemperature(13);
+			expect(thermostat.temperature).toEqual(32);
+		});
+
+		it("to be on as default", function () {
+			expect(thermostat.powerSaving).toEqual(true);
+		});
+
 	});
 	
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
