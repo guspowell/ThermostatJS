@@ -63,6 +63,36 @@ describe("Thermostat", function() {
 		});
 
 	});
+
+	describe("has a reset button", function() {
+
+		it("when pushed resets temperature to 20", function() {
+			thermostat.increaseTemperature(5);
+			thermostat.resetButton();
+			expect(thermostat.temperature).toEqual(20);
+		});
+
+	});
+
+	describe("has a colour system based on energy usage", function() {
+
+		it("where green is 18 or below", function() {
+			thermostat.decreaseTemperature(5);
+			expect(thermostat.tempColour()).toEqual("green")
+		});
+
+		it("where yellow is between 19 and 24", function() {
+			thermostat.decreaseTemperature(0);
+			expect(thermostat.tempColour()).toEqual("yellow")
+		});
+
+		it("where red is 25 or above", function() {
+			thermostat.increaseTemperature(7);
+			expect(thermostat.tempColour()).toEqual("red")
+		});
+
+	});
+
 	
 });
 

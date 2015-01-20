@@ -1,6 +1,7 @@
 var Thermostat = function() {
 	this.temperature = 20;
 	this.powerSaving = true;
+	this.currentColour = "yellow";
 };
 
 
@@ -38,3 +39,34 @@ Thermostat.prototype.turnOnPowerSaving = function() {
 Thermostat.prototype.turnOffPowerSaving = function() {
 	return this.powerSaving = false;
 };
+
+Thermostat.prototype.resetButton = function() {
+	return this.temperature = 20;
+};
+
+Thermostat.prototype.tempColour = function() {
+	if (this.temperature <= 18) {
+		return this.currentColour = "green";
+	}
+	if (this.temperature > 18 && this.temperature <= 24) {
+		return this.currentColour = "yellow"
+	}
+	else {
+		return this.tempColour = "red"
+	}
+
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
