@@ -26,6 +26,20 @@ describe("Thermostat", function() {
 			expect(thermostat.temperature).toEqual(19);
 		});
 
+		it("can't go below minimum", function(){
+			thermostat.decreaseTemperature(11);
+			expect(thermostat.temperature).toEqual(10);
+		});
+
+	});
+
+	describe("power saving mode", function() {
+
+		it("can be turned on", function(){
+			thermostat.turnOnPowerSaving();
+			expect(thermostat.powerSaving).toEqual(true);
+		});
+
 	});
 	
 });
