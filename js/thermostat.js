@@ -3,6 +3,6 @@ var Thermostat = function() {
 };
 
 
-Thermostsat.prototype.increaseTemperature = function(changeTempBy) {
+Thermostat.prototype.increaseTemperature = function(changeTempBy) {
 	return this.temperature += changeTempBy;
 };
