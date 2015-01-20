@@ -12,12 +12,12 @@ describe("Thermostat", function() {
 		});
 	});
 
-	describe("", function() {
+	describe("changing temperature", function() {
 		it("can increase", function() {
 			thermostat.increaseTemperature(1);
 			expect(thermostat.temperature).toEqual(21);
 		});
+
 	});
-
-
+	
 });
