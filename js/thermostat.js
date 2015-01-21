@@ -51,6 +51,29 @@ Thermostat.prototype.toggleAway = function() {
 	};
 };
 
+Thermostat.prototype.currentTime = function() {
+	var date = new Date()
+	var hour = date.getHours();
+	var min = date.getMinutes();
+	return hour + ':' + min
+};
+
+
+Thermostat.prototype.timerAway = function(from, until) {
+	if (this.currentTime() > from && this.currentTime() < until) {
+		this.temperature = this.minTemperature;
+	}
+	else {
+		this.temperature = this.defaultTemperature;
+	}
+};
+
+
+
+
+
+
+
 
 
 

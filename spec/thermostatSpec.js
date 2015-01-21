@@ -120,6 +120,25 @@ describe("Thermostat", function() {
 
 	});
 
+	describe("has a timer", function() {
+
+		it("knows the current time", function() {
+			var date = new Date()
+			var hour = date.getHours();
+			var min = date.getMinutes();
+			expect(thermostat.currentTime()).toEqual(hour + ':' + min)
+		});
+
+		// it("can toggle away between certain hours", function() {
+
+		// 	expect(thermostat.temperature).toEqual(10)
+
+		// 	expect(thermostat.temperature).toEqual(20)
+		// });
+
+	});
+
+
 	
 });
 
