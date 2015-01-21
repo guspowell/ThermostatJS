@@ -41,8 +41,14 @@ Thermostat.prototype.tempColour = function() {
 };
 
 Thermostat.prototype.toggleAway = function() {
-	if (this.away === false) {this.away = true;}
-	else {this.away = false;};
+	if (this.away === false) {
+		this.away = true;
+		this.temperature = this.minTemperature;
+	}
+	else {
+		this.away = false;
+		this.temperature = this.defaultTemperature;
+	};
 };
 
 

@@ -106,6 +106,18 @@ describe("Thermostat", function() {
 			expect(thermostat.away).toBe(true);
 		});
 
+		it("when switched on current temperature is brought down to minimum", function() {
+			thermostat.toggleAway();
+			expect(thermostat.temperature).toEqual(10);
+		});
+
+		it("when switched off, current temperature is raised to default temperature", function() {
+			thermostat.toggleAway();
+			expect(thermostat.temperature).toEqual(10);
+			thermostat.toggleAway();
+			expect(thermostat.temperature).toEqual(20);
+		});
+
 	});
 
 	
