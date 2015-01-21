@@ -59,14 +59,14 @@ Thermostat.prototype.currentTime = function() {
 };
 
 
-Thermostat.prototype.timerAway = function(from, until) {
-	if (this.currentTime() > from && this.currentTime() < until) {
-		this.temperature = this.minTemperature;
-	}
-	else {
-		this.temperature = this.defaultTemperature;
-	}
-};
+// Thermostat.prototype.timerAway = function(from, until) {
+// 	if (this.currentTime() > from && this.currentTime() < until) {
+// 		this.temperature = this.minTemperature;
+// 	}
+// 	else {
+// 		this.temperature = this.defaultTemperature;
+// 	}
+// };
 
 
 
