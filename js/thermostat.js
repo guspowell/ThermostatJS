@@ -3,6 +3,7 @@ var Thermostat = function() {
 	this.defaultTemperature = 20;
 	this.minTemperature = 10;
 	this.powerSaving = true;
+	this.away = false;
 };
 
 Thermostat.prototype.maxTemp = function() {
@@ -37,6 +38,11 @@ Thermostat.prototype.tempColour = function() {
 	if (this.temperature <= 18) {return  "green";}
 	if (this.temperature > 18 && this.temperature <= 24) {return  "yellow"}
 	else {return "red"}
+};
+
+Thermostat.prototype.toggleAway = function() {
+	if (this.away === false) {this.away = true;}
+	else {this.away = false;};
 };
 
 

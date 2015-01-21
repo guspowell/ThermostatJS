@@ -10,3 +10,7 @@ Thermostat Challenge
 * Power saving mode is on by default
 * You can reset the temperature to 20 by hitting the reset button
 * Thermostat should color the display based on energy usage - < 18 is green, < 25 is yellow, otherwise red
+
+
+should have an away button which turns thermostat to min (or a set temperature)
+should be able to set a timer so temperature goes up between set hours

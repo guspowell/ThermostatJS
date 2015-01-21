@@ -99,6 +99,15 @@ describe("Thermostat", function() {
 
 	});
 
+	describe("has an away button", function() {
+
+		it("can be turned on", function() {
+			thermostat.toggleAway();
+			expect(thermostat.away).toBe(true);
+		});
+
+	});
+
 	
 });
 
