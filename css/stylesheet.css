@@ -3,24 +3,50 @@
 	padding: 0;
 }
 
-.increase-temperature {
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
 
+#container {
+	text-align: center;
+}
+
+header {
+	padding-top: 1em;
+}
+
+#increase-temperature {
+	margin-left: auto;
+}
+
+#increase-temperature img {
+	padding: 2px;
+	height: 1.3em;
+	width: 2em;
 }
 
 #temperature {
-
+	text-align: center;
 }
 
-.decrease-temperature {
-
+.decrease-temperature img {
+	padding: 2px;
+	height: 1.3em;
+	width: 2em;
 }
 
 .big-buttons {
 
 }
 
-.power-saving {
+.power-saving img {
+	height: 4em;
+	width: 4.5em;
+	border-radius: 50%;
+}
 
+.power-saving {
+	border-radius: 50%;
 }
 
 .reset {
