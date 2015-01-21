@@ -11,26 +11,22 @@ Thermostat.prototype.maxTemp = function() {
 
 
 Thermostat.prototype.increaseTemperature = function(changeTempBy) {
-	// this.temperature += changeTempBy;
 	var newTemp = this.temperature + changeTempBy;
-	if (newTemp < this.maxTemp()) {
-		return this.temperature = newTemp
-	} else {
-		return this.temperature = this.maxTemp();
-	}
+	if (newTemp < this.maxTemp()) {return this.temperature = newTemp} 
+	else {return this.temperature = this.maxTemp();}
 };
 
 Thermostat.prototype.decreaseTemperature = function(changeTempBy) {
 	this.temperature -= changeTempBy;
-	if (this.temperature < this.minTemperature) { 
-		return this.temperature = this.minTemperature
-	} else { 
-		return this.temperature
-	};
+	if (this.temperature < this.minTemperature) {return this.temperature = this.minTemperature}
+	else {return this.temperature};
 };
 
 Thermostat.prototype.togglePowerSaving = function() {
-	if (this.powerSaving === true) {this.powerSaving = false;} else {this.powerSaving = true;}
+	if (this.powerSaving === true) {this.powerSaving = false;}
+	else {this.powerSaving = true;
+		if (this.temperature > this.maxTemp()) {this.temperature = this.maxTemp();}
+	}
 };
 
 Thermostat.prototype.resetButton = function() {
@@ -38,15 +34,9 @@ Thermostat.prototype.resetButton = function() {
 };
 
 Thermostat.prototype.tempColour = function() {
-	if (this.temperature <= 18) {
-		return  "green";
-	}
-	if (this.temperature > 18 && this.temperature <= 24) {
-		return  "yellow"
-	}
-	else {
-		return "red"
-	}
+	if (this.temperature <= 18) {return  "green";}
+	if (this.temperature > 18 && this.temperature <= 24) {return  "yellow"}
+	else {return "red"}
 };
 
 
