@@ -1,0 +1,15 @@
+put script link at the end of the html
+browser >> jQuery >> post jquery webaddress in file
+link to java
+
+var thermostat = new Thermostat();
+$() => initializes jQuery
+
+a click is an event:
+
+id => # (only used once in html)
+class => .
+
+
+
+changeTempBy = changeTempBy || this.default(TemperatureChange;

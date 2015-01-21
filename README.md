@@ -13,5 +13,7 @@ Thermostat Challenge
 
 
 should have an away button which turns thermostat to min (or a set temperature)
+
 should know the current time
-should be able to set a timer so temperature goes up between set hours
+
+should be able to set a timer so temperature goes up between set hours.
