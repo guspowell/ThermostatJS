@@ -1,60 +1,52 @@
 var Thermostat = function() {
 	this.temperature = 20;
+	this.defaultTemperature = 20;
+	this.minTemperature = 10;
 	this.powerSaving = true;
-	this.currentColour = "yellow";
+};
+
+Thermostat.prototype.maxTemp = function() {
+	if (this.powerSaving === true) {return 25;} else {return 32;}
 };
 
 
 Thermostat.prototype.increaseTemperature = function(changeTempBy) {
-	this.temperature += changeTempBy;
-	if (this.powerSaving === true) {
-		if (this.temperature < 25) {
-			return this.temperature
-		} else {
-			return this.temperature = 25
-		}
-	}
-	if (this.powerSaving === false) {
-		if (this.temperature < 32) {
-			return this.temperature
-		} else {
-			return this.temperature = 32
-		}
+	// this.temperature += changeTempBy;
+	var newTemp = this.temperature + changeTempBy;
+	if (newTemp < this.maxTemp()) {
+		return this.temperature = newTemp
+	} else {
+		return this.temperature = this.maxTemp();
 	}
 };
 
 Thermostat.prototype.decreaseTemperature = function(changeTempBy) {
 	this.temperature -= changeTempBy;
-	if (this.temperature < 10) { 
-		return this.temperature = 10
+	if (this.temperature < this.minTemperature) { 
+		return this.temperature = this.minTemperature
 	} else { 
 		return this.temperature
 	};
 };
 
-Thermostat.prototype.turnOnPowerSaving = function() {
-	return this.powerSaving = true;
-};
-
-Thermostat.prototype.turnOffPowerSaving = function() {
-	return this.powerSaving = false;
+Thermostat.prototype.togglePowerSaving = function() {
+	if (this.powerSaving === true) {this.powerSaving = false;} else {this.powerSaving = true;}
 };
 
 Thermostat.prototype.resetButton = function() {
-	return this.temperature = 20;
+	return this.temperature = this.defaultTemperature;
 };
 
 Thermostat.prototype.tempColour = function() {
 	if (this.temperature <= 18) {
-		return this.currentColour = "green";
+		return  "green";
 	}
 	if (this.temperature > 18 && this.temperature <= 24) {
-		return this.currentColour = "yellow"
+		return  "yellow"
 	}
 	else {
-		return this.tempColour = "red"
+		return "red"
 	}
-
 };
 
 
