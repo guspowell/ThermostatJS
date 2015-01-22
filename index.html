@@ -9,29 +9,32 @@
 
 <body>
 
-	<div id="container">
+	<section id="left">
+		<section id="contents">
+			
+			<section id="energy-colour">
+				<span id="temperature">??</span>
+			</section>
 
-		<header><h1>"Thermy"</h1></header>
+			<section id="plus-minus-reset">
+				<p id="increase-temperature"><button type="button">+</button></p>
+				<p id="decrease-temperature"><button type="button">-</button></p>
+				<p class="reset"><button type="button">reset</button></p>
+			</section>
 
-		<div id="increase-temperature"><button type="button"><img src="images/up-triangle.png"></button></div>
-		<br/>
-		<h1 id="energy-colour">
-			<span id="temperature">??</span>℃
-		</h1>
-		<br/>
-		<div id="decrease-temperature"><button type="button"><img src="images/down-triangle.png"></button></div>
+			<section id="power-saving-mode">
+				<p id="power-saving"><button type="button"> Power Saving Mode </button></p>
+			</section>
 
-		<section class="big-buttons">
-			<button class="power-saving" type="button"><img src="images/leaf.png"></button>
-			<button class="reset" type="button"><img src="images/reset.png"></button>
-			<button class="holiday" type="button"><img src="images/holiday.png"></button>
-		</section>	
+			<section id="holiday-mode">
+				<p class="holiday"><button type="button"> Away </button></p>
+			</section>
 
-		<section class="timer">
-			<h1><span id="time">Time</span></h1>
 		</section>
+	</section>
 
-	</div>	
+	<section id="right">	
+	</section>
 
 	<script src="https://code.jquery.com/jquery-1.11.2.js"></script>
 	<script src="js/thermostat.js"></script>

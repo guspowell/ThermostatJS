@@ -5,6 +5,7 @@ var Thermostat = function() {
 	this.powerSaving = true;
 	this.away = false;
 	this.energyColour = "medium-usage";
+	this.powerSavingColour = "blue"
 };
 
 Thermostat.prototype.maxTemp = function() {
@@ -25,8 +26,11 @@ Thermostat.prototype.decreaseTemperature = function(changeTempBy) {
 };
 
 Thermostat.prototype.togglePowerSaving = function() {
-	if (this.powerSaving === true) {this.powerSaving = false;}
-	else {this.powerSaving = true;
+	if (this.powerSaving === true) {
+		this.powerSaving = false;
+		this.powerSavingColour = "nothing";
+	}
+	else {this.powerSaving = true; this.powerSavingColour = "blue";
 		if (this.temperature > this.maxTemp()) {this.temperature = this.maxTemp();}
 	}
 };

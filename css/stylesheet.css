@@ -1,40 +1,46 @@
+@import url('normalise.css');
+
 * {
 	margin: 0;
 	padding: 0;
 }
 
+html {
+	height: 100%;
+}
+
 body {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-family: Helvetica, Arial, sans-serif;
+  height: 100%; 
 }
 
-#container {
-	text-align: center;
+#left {
+	float: left;
+	width: 55%;
+	height: 100%;
 }
 
-header {
-	padding-top: 1em;
-	margin-bottom: 2em;
+#right {
+	float: left;
+	width: 45%;
+	height: 100%;
+	background-color: black;
 }
 
-#increase-temperature button{
-	padding: 0;
-	border: none;
-	background: none;
-	height: 5em;
-	width: 6em;
+#contents {
+	float: right;
+	height: 60%;
+	width: 60%;
+	margin-top: 25%;
+	margin-bottom: 15%;
+	margin-right: 0.5em;
+	text-align: right;
 }
 
-#increase-temperature img {
-	height: 4em;
-	width: 5em;
-}
-
-#temperature {
-	font-size: 3em;
-}
-
-#temperature h1 {
-	text-align: center;
+#energy-colour {
+	display: block;
+	font-size: 14em;
+	height: 59%;
 }
 
 .low-usage {
@@ -49,57 +55,38 @@ header {
 	color: red;
 }
 
-#decrease-temperature {
+
+#plus-minus-reset {
+	padding: 0.3em 0.4em 0 0;
 }
 
-#decrease-temperature button {
+#plus-minus-reset p {
+	display: inline;
+	font-size: 2em;
+	padding-left: 0.4em;
+}
+
+#contents button {
 	padding: 0;
 	border: none;
 	background: none;
-	height: 5em;
-	width: 6em;
 }
 
-#decrease-temperature img {
-	height: 4em;
-	width: 5em;
+#power-saving-mode {
+	font-size: 1.4em;
+	padding: 0.3em 0.32em 0 0;
 }
 
-.big-buttons {
-	margin-top: 1em;
-	margin-bottom: 1em;
+.blue {
+	color: #00CCFF;
 }
 
-.big-buttons button{
-	padding: 0;
-	border: none;
-	background: none;
-	margin: 2em 1em 2em 1em;
-}
-
-.big-buttons img{
-	height: 4em;
-	width: 4em;
-	border-radius: 50%;
-}
-
-.power-saving {
-	border-radius: 50%;
-}
-
-.reset {
-	border-radius: 50%;
-}
-
-.holiday {
-	border-radius: 50%;
-}
-
-.timer {
+.nothing {
 
 }
 
-#time {
-	
+#holiday-mode {
+	font-size: 1.4em;
+	padding: 0.3em 0.32em 0 0;
 }
 
