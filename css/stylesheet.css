@@ -13,35 +13,67 @@ body {
 
 header {
 	padding-top: 1em;
+	margin-bottom: 2em;
 }
 
-#increase-temperature {
-	margin-left: auto;
+#increase-temperature button{
+	height: 5em;
+	width: 6em;
 }
 
 #increase-temperature img {
-	padding: 2px;
-	height: 1.3em;
-	width: 2em;
+	height: 4em;
+	width: 5em;
 }
 
 #temperature {
-	text-align: center;
+	font-size: 3em;
 }
 
-.decrease-temperature img {
-	padding: 2px;
-	height: 1.3em;
-	width: 2em;
+#temperature h1 {
+	text-align: center;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.low-usage {
+	color: green;
+}
+
+.medium-usage {
+	color: orange;
+}
+
+.high-usage {
+	color: red;
+}
+
+#decrease-temperature {
+	margin-top: 1em;
+}
+
+#decrease-temperature button {
+	height: 5em;
+	width: 6em;
+}
+
+#decrease-temperature img {
+	height: 4em;
+	width: 5em;
 }
 
 .big-buttons {
-
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
 
-.power-saving img {
+.big-buttons button{
+	margin: 2em 1em 2em 1em;
+}
+
+.big-buttons img{
 	height: 4em;
-	width: 4.5em;
+	width: 4em;
 	border-radius: 50%;
 }
 
@@ -50,11 +82,11 @@ header {
 }
 
 .reset {
-
+	border-radius: 50%;
 }
 
 .holiday {
-
+	border-radius: 50%;
 }
 
 .timer {

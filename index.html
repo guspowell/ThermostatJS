@@ -3,6 +3,7 @@
 
 <head>
 	<title> Thermostat </title>
+	<meta charset='utf8'>
 	<link rel="stylesheet" href="css/stylesheet.css">
 </head>
 
@@ -13,15 +14,17 @@
 		<header><h1>"Thermy"</h1></header>
 
 		<div id="increase-temperature"><button type="button"><img src="images/up-triangle.png"></button></div>
-
-		<span id="temperature"><h1>??</h1></span>
-
-		<button class="decrease-temperature" type="button"><img src="images/down-triangle.png"></button>
+		<br/>
+		<h1 id="energy-colour" class="high-usage medium-usage low-usage">
+			<span id="temperature">??</span>℃
+		</h1>
+		<br/>
+		<div id="decrease-temperature"><button type="button"><img src="images/down-triangle.png"></button></div>
 
 		<section class="big-buttons">
 			<button class="power-saving" type="button"><img src="images/leaf.png"></button>
-			<button class="reset" type="button">Reset</button>
-			<button class="holiday" type="button">Away</button>
+			<button class="reset" type="button"><img src="images/reset.png"></button>
+			<button class="holiday" type="button"><img src="images/holiday.png"></button>
 		</section>	
 
 		<section class="timer">
@@ -29,6 +32,10 @@
 		</section>
 
 	</div>	
+
+	<script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+	<script src="js/thermostat.js"></script>
+	<script src="js/interface.js"></script>
 
 </body>
 

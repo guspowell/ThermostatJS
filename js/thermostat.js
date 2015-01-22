@@ -4,6 +4,7 @@ var Thermostat = function() {
 	this.minTemperature = 10;
 	this.powerSaving = true;
 	this.away = false;
+	this.energyColour = "medium-usage";
 };
 
 Thermostat.prototype.maxTemp = function() {
@@ -35,9 +36,9 @@ Thermostat.prototype.resetButton = function() {
 };
 
 Thermostat.prototype.tempColour = function() {
-	if (this.temperature <= 18) {return  "green";}
-	if (this.temperature > 18 && this.temperature <= 24) {return  "yellow"}
-	else {return "red"}
+	if (this.temperature < 19) {this.energyColour = "low-usage";}
+	if (this.temperature > 24) {this.energyColour = "high-usage"}
+	else {this.energyColour = "medium-usage"}
 };
 
 Thermostat.prototype.toggleAway = function() {
