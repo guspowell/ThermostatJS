@@ -34,19 +34,20 @@ span img {
 }
 
 #contents {
+	display: inline;
 	float: right;
-	height: 60%;
-	width: 60%;
+	height: 58%;
+	width: 100%;
 	margin-top: 25%;
 	margin-bottom: 15%;
-	margin-right: 0.5em;
+	margin-right: 0.9em;
 	text-align: right;
 }
 
 #energy-colour {
 	display: block;
-	font-size: 14em;
-	height: 59%;
+	font-size: 14.5vw;
+	height: 45%;
 }
 
 .low-usage {
@@ -63,12 +64,12 @@ span img {
 
 
 #plus-minus-reset {
-	padding: 0.3em 0.4em 0 0;
+	margin: 0.3em 0.3em 0 0;
 }
 
 #plus-minus-reset p {
 	display: inline;
-	font-size: 2em;
+	font-size: 2vw;
 	padding-left: 0.4em;
 }
 
@@ -80,7 +81,9 @@ span img {
 
 #power-saving-mode {
 	font-size: 1.4em;
-	padding: 0.3em 0.32em 0 0;
+	margin: 0.3em 0.3em 0 0;
+	font-size: 1.72vw;
+	background-color: red;
 }
 
 .blue {
@@ -92,7 +95,53 @@ span img {
 }
 
 #holiday-mode {
-	font-size: 1.4em;
-	padding: 0.3em 0.32em 0 0;
+	font-size: 1.4vw;
+	margin: 0.3em 0.3em 0 0;
 }
+
+#degrees {
+	margin-left: -0.03em;
+}
+
+#bar {
+	background-color: red;
+}
+
+#psm {
+	background-color: white;
+	padding-left: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
