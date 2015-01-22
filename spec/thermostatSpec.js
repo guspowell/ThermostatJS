@@ -82,19 +82,22 @@ describe("Thermostat", function() {
 
 	describe("has a colour system based on energy usage", function() {
 
-		it("where green is 18 or below", function() {
+		it("where low-usage is 18 or below", function() {
 			thermostat.decreaseTemperature(5);
-			expect(thermostat.tempColour()).toEqual("green")
+			thermostat.tempColour();
+			expect(thermostat.energyColour).toEqual("low-usage")
 		});
 
-		it("where yellow is between 19 and 24", function() {
+		it("where medium-usage is between 19 and 24", function() {
 			thermostat.decreaseTemperature(0);
-			expect(thermostat.tempColour()).toEqual("yellow")
+			thermostat.tempColour();
+			expect(thermostat.energyColour).toEqual("medium-usage")
 		});
 
-		it("where red is 25 or above", function() {
+		it("where high-usage is 25 or above", function() {
 			thermostat.increaseTemperature(7);
-			expect(thermostat.tempColour()).toEqual("red")
+			thermostat.tempColour();
+			expect(thermostat.energyColour).toEqual("high-usage")
 		});
 
 	});

@@ -1,6 +1,7 @@
 var thermostat = new Thermostat();
 
 var updateColour = function() {
+	thermostat.tempColour();
 	$('#energy-colour').addClass(thermostat.energyColour);
 };
 

@@ -37,8 +37,8 @@ Thermostat.prototype.resetButton = function() {
 
 Thermostat.prototype.tempColour = function() {
 	if (this.temperature < 19) {this.energyColour = "low-usage";}
-	if (this.temperature > 24) {this.energyColour = "high-usage"}
-	else {this.energyColour = "medium-usage"}
+	else if (this.temperature > 24) {this.energyColour = "high-usage";}
+	else {this.energyColour = "medium-usage";}
 };
 
 Thermostat.prototype.toggleAway = function() {
