@@ -15,7 +15,7 @@ Thermostat.prototype.maxTemp = function() {
 
 Thermostat.prototype.increaseTemperature = function(changeTempBy) {
 	var newTemp = this.temperature + changeTempBy;
-	if (newTemp < this.maxTemp()) {return this.temperature = newTemp} 
+	if (newTemp < this.maxTemp()) {return this.temperature = newTemp}
 	else {return this.temperature = this.maxTemp();}
 };
 
@@ -62,33 +62,3 @@ Thermostat.prototype.currentTime = function() {
 	var min = date.getMinutes();
 	return hour + ':' + min
 };
-
-
-// Thermostat.prototype.timerAway = function(from, until) {
-// 	if (this.currentTime() > from && this.currentTime() < until) {
-// 		this.temperature = this.minTemperature;
-// 	}
-// 	else {
-// 		this.temperature = this.defaultTemperature;
-// 	}
-// };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
