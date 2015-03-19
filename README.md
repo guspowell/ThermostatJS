@@ -2,8 +2,7 @@ Thermostat
 =======================
 
 ## Introduction
-
-
+In week 5 of Makers we were introduced to Javascript for the first time. The week involved making an awesome thermostat (inspired by the lack of heating at Maker's that week!).
 
 
 ## Brief
@@ -27,29 +26,19 @@ Thermostat
 ## Technologies Used
 
 - Javascript
+- JQuery
 - Jasmine
 - CSS
 
-## Enhancements
-
-- [ ] Side bar should change colour when the degrees changes colour
-- [ ] Should be able to set a timer so temperature goes up between set hours.
-
-## Favourite Code Snippet
-
-~~~
- TODO: paste code here
-~~~
-
 ## Collaborators
 
-- NAME_ONE (http://www.github.com/USERNAME)
-- NAME_TWO (http://www.github.com/USERNAME)
+- Gus Powelll (http://www.github.com/guspowell)
+- Charlie Walsh (http://www.github.com/ciawalsh)
 
-## Still to complete/refactor
+## Enhancements/To complete
 
-- [ ]
-- [ ]
+- [ ] Implement a timer so temperature goes up between set hours.
+- [ ] Side bar should change colour when the degrees changes colour
 
 ## Takeaway
 
