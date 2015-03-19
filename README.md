@@ -42,4 +42,4 @@ In week 5 of Makers we were introduced to Javascript for the first time. The wee
 
 ## Takeaway
 
-TODO: Enter a personal reflection and/or things you learnt
+- The began with the daunting prospect of learning a whole new language, but after just four days, we managed to make something pretty cool!
